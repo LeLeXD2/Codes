@@ -44,10 +44,6 @@ def retrieve_context(question):
 
         for result in results.data:
 
-            print("\nResult:")
-
-            print(result)
-
             if hasattr(result, "content"):
 
                 for item in result.content:
@@ -59,12 +55,6 @@ def retrieve_context(question):
                         )
 
         context = "\n\n".join(context_parts)
-
-        print("\n==============================")
-        print("RETRIEVED CONTEXT")
-        print("==============================")
-
-        print(context)
 
         return context
 

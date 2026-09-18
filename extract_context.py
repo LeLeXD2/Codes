@@ -7,24 +7,69 @@ COMPANIES = {}
 
 for _, row in sp500.iterrows():
 
-    ticker = row["Ticker"].upper()
+    ticker = str(row["Ticker"]).upper().strip()
 
     if pd.isna(row["Company"]):
         continue
 
+    company = str(row["Company"]).upper().strip()
+
+    # Remove common company suffixes
     company = (
-        row["Company"]
-        .replace(" Inc.", "")
-        .replace(" Corporation", "")
-        .replace(" Corp.", "")
+        company
+        .replace(" INC.", "")
+        .replace(" INC", "")
+        .replace(" CORPORATION", "")
+        .replace(" CORP.", "")
+        .replace(" CORP", "")
         .replace(",", "")
-        .replace(" Ltd.", "")
-        .replace(" plc", "")
-        .replace(" Company", "")
-        .upper()
+        .replace(" LTD.", "")
+        .replace(" LTD", "")
+        .replace(" PLC", "")
+        .replace(" COMPANY", "")
+        .strip()
     )
 
     COMPANIES[company] = ticker
+
+
+# ============================================================
+# VALID TICKERS
+# ============================================================
+
+VALID_TICKERS = set(COMPANIES.values())
+
+
+# Common English words that could also look like ticker symbols
+TICKER_STOPWORDS = {
+    "A",
+    "I",
+    "AN",
+    "AM",
+    "ARE",
+    "AT",
+    "BE",
+    "BUY",
+    "FOR",
+    "GOOD",
+    "HOLD",
+    "IN",
+    "IS",
+    "IT",
+    "ME",
+    "MY",
+    "OF",
+    "ON",
+    "OR",
+    "SELL",
+    "THE",
+    "TO"
+}
+
+
+# ============================================================
+# EXTRACT TICKER
+# ============================================================
 
 def extract_ticker(message):
 
@@ -32,25 +77,49 @@ def extract_ticker(message):
 
     print("Searching:", message)
 
-    # Check company names first
-    for company, ticker in COMPANIES.items():
+    # --------------------------------------------------------
+    # 1. CHECK COMPANY NAMES
+    # --------------------------------------------------------
 
-        if company in message:
+    # Longer company names are checked first
+    for company, ticker in sorted(
+        COMPANIES.items(),
+        key=lambda x: len(x[0]),
+        reverse=True
+    ):
+
+        # Match complete company names rather than substrings
+        pattern = r"(?<!\w)" + re.escape(company) + r"(?!\w)"
+
+        if re.search(pattern, message):
 
             print("Matched company:", company)
+            print("Ticker:", ticker)
 
             return ticker
 
-    # Check ticker symbols
-    words = re.findall(r"[A-Z]+", message)
+    # --------------------------------------------------------
+    # 2. CHECK EXPLICIT TICKER SYMBOLS
+    # --------------------------------------------------------
+
+    words = re.findall(r"\b[A-Z]{1,5}\b", message)
 
     for word in words:
 
-        if word in COMPANIES.values():
+        # Prevent normal English words such as "A"
+        # from being interpreted as ticker symbols
+        if word in TICKER_STOPWORDS:
+            continue
+
+        if word in VALID_TICKERS:
 
             print("Matched ticker:", word)
 
             return word
+
+    # --------------------------------------------------------
+    # NO SUPPORTED COMPANY FOUND
+    # --------------------------------------------------------
 
     print("No ticker found.")
 
