@@ -6,3 +6,4 @@ venv/
 data/raw/
 data/processed/
 data/final/final_ml_dataset.csv
+deploy_env/
