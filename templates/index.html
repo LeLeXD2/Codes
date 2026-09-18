@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Financial Advisor AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     SIDEBAR
+========================================== -->
+
+<div
+    class="sidebar"
+    id="sidebar"
+>
+
+    <div class="sidebar-top">
+
+        <h2>Financial Bot</h2>
+
+        <button
+            id="close-sidebar"
+            class="close-sidebar"
+        >
+            ✕
+        </button>
+
+    </div>
+
+    <button id="new-chat">
+        ＋ New Chat
+    </button>
+
+</div>
+
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<div class="main" id="main">
+
+    <div class="header">
+
+        <button
+            id="open-sidebar"
+            class="menu-toggle"
+        >
+            ☰
+        </button>
+
+        <h1>
+            Financial Advisor AI
+        </h1>
+
+    </div>
+
+
+    <div
+        class="chat-area"
+        id="chat-area"
+    >
+
+        <div class="welcome">
+
+            <h2>
+                How can I help you invest today?
+            </h2>
+
+            <p>
+                Ask me about any stock.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="input-area">
+
+        <input
+            id="question"
+            type="text"
+            placeholder="Ask anything..."
+        >
+
+        <button id="send">
+            ➜
+        </button>
+
+    </div>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+</body>
+
+</html>

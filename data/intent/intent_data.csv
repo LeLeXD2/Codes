@@ -1,0 +1,266 @@
+text,intent
+good to see you,greeting
+how are you advisor,greeting
+hello financial advisor,greeting
+hey can you help me,greeting
+hi advisor can you help,greeting
+morning advisor,greeting
+hello i have a question,greeting
+hey i need some help,greeting
+hi can we talk about investing,greeting
+hello can you help with stocks,greeting
+hey there advisor,greeting
+good day advisor,greeting
+hi i need investment help,greeting
+hello i want to learn about investing,greeting
+hey i have a stock question,greeting
+is tesla a good stock to purchase,buy
+would buying apple shares make sense,buy
+do you think nvidia is worth purchasing,buy
+i am considering buying microsoft,buy
+does amazon look attractive to buy,buy
+would you consider meta a buy,buy
+is google a good investment to purchase,buy
+i am thinking about investing in amd,buy
+would purchasing tesla shares be sensible,buy
+do you recommend buying apple shares,buy
+is nvidia attractive as an investment,buy
+would now be a reasonable time to buy microsoft,buy
+i want to invest in amazon should i buy it,buy
+does meta look worth buying,buy
+could google be worth purchasing,buy
+would investing in tesla make sense,buy
+is apple currently worth investing in,buy
+should i consider purchasing nvidia shares,buy
+do you think microsoft is worth buying,buy
+would amazon be a reasonable purchase,buy
+i am interested in buying meta what do you think,buy
+does alphabet look like a good buy,buy
+would you consider investing in amd,buy
+is tesla worth adding to my investments,buy
+do you think apple deserves a buy,buy
+i am considering getting some nvidia shares,buy
+would microsoft be worth investing in,buy
+does amazon have a positive buying opportunity,buy
+should i enter a position in meta,buy
+is google attractive enough to buy,buy
+is tesla something i should sell,sell
+would selling my apple shares make sense,sell
+do you think i should exit nvidia,sell
+i am considering selling microsoft,sell
+should i get rid of my amazon shares,sell
+is it time to exit my position in meta,sell
+would you consider selling google,sell
+should i dispose of my amd shares,sell
+does selling tesla make sense right now,sell
+i am thinking about getting rid of apple,sell
+would exiting nvidia be sensible,sell
+should i close my microsoft position,sell
+is amazon something i should sell,sell
+do you think i should unload my meta shares,sell
+would it make sense to exit google,sell
+should i reduce my position by selling amd,sell
+i am thinking of selling tesla what do you think,sell
+does apple look like a sell,sell
+would you exit your position in nvidia,sell
+is microsoft worth holding or should i sell,sell
+should i move out of amazon,sell
+do you recommend selling meta,sell
+would getting rid of google shares make sense,sell
+is now the time to sell amd,sell
+i want to exit tesla should i,sell
+should i cash out my apple position,sell
+does the model suggest selling nvidia,sell
+would selling microsoft be reasonable,sell
+i no longer want amazon should i sell,sell
+should i consider exiting meta,sell
+give me an assessment of tesla stock,analysis
+can you evaluate apple for me,analysis
+what is your analysis of nvidia,analysis
+take a look at microsoft stock,analysis
+can you assess amazon stock,analysis
+give me your view of meta stock,analysis
+run an analysis on google,analysis
+evaluate amd using the model,analysis
+what does your model say about tesla,analysis
+show me the model results for apple,analysis
+can you check nvidia for me,analysis
+give me a detailed assessment of microsoft,analysis
+what is the prediction for amazon,analysis
+show me an evaluation of meta,analysis
+can you examine google stock,analysis
+what does the prediction model say about amd,analysis
+check how tesla is performing according to the model,analysis
+give me the stock prediction for apple,analysis
+can you assess nvidia using your prediction model,analysis
+show me microsoft's model prediction,analysis
+what signal does amazon currently have,analysis
+tell me how meta ranks according to the model,analysis
+give me an overview of google stock,analysis
+check the predicted return for amd,analysis
+what is tesla's current model signal,analysis
+can you provide an assessment of apple stock,analysis
+show me how nvidia scores in the model,analysis
+what does the model predict for microsoft,analysis
+evaluate amazon based on the prediction model,analysis
+give me the current analysis for meta,analysis
+why did the model give that signal,explanation
+how did you reach that recommendation,explanation
+what is the reason for that prediction,explanation
+can you explain why it received that rank,explanation
+why is the model expecting that return,explanation
+what made the model classify it that way,explanation
+can you explain that result,explanation
+why did it receive a buy signal,explanation
+why did it receive a sell signal,explanation
+what caused that recommendation,explanation
+why does the model think that,explanation
+can you explain the reasoning behind the result,explanation
+what does that prediction mean for this stock,explanation
+why is its market rank so high,explanation
+why is its market rank so low,explanation
+what caused the predicted return to be positive,explanation
+what caused the predicted return to be negative,explanation
+help me understand the previous prediction,explanation
+can you explain your previous answer,explanation
+what is behind that model result,explanation
+show me the highest ranked stocks,top_stocks
+which stocks have the strongest model signals,top_stocks
+give me the stocks with the best predictions,top_stocks
+which companies rank highest in the model,top_stocks
+show me the leading stocks according to the model,top_stocks
+which stocks have the highest expected returns,top_stocks
+give me your highest ranked stock predictions,top_stocks
+show me the strongest buy signals,top_stocks
+which stocks are at the top of the ranking,top_stocks
+give me five stocks with the strongest predictions,top_stocks
+what companies does the model currently rank highest,top_stocks
+show me the model's leading stock candidates,top_stocks
+which shares have the highest predicted five day returns,top_stocks
+give me the top performing predictions from the model,top_stocks
+what stocks currently have the strongest buy signals,top_stocks
+show me the highest predicted returns,top_stocks
+which companies have the strongest model predictions,top_stocks
+list the stocks at the top of your model ranking,top_stocks
+what are the model's strongest stock candidates,top_stocks
+give me the leading stock predictions,top_stocks
+how does diversification reduce investment risk,general
+why is diversification important for investors,general
+how many stocks should a diversified portfolio contain,general
+what is the purpose of portfolio diversification,general
+what happens if a portfolio is not diversified,general
+how does volatility affect investment risk,general
+why are some stocks more volatile than others,general
+how is stock volatility measured,general
+what does high volatility indicate,general
+what is the difference between risk and volatility,general
+how do exchange traded funds work,general
+what is the difference between an etf and a stock,general
+why do investors use etfs,general
+how does an index fund work,general
+what is the difference between an index fund and an etf,general
+what are the advantages of index investing,general
+what does it mean to own a share,general
+how do investors make money from stocks,general
+why do stock prices increase and decrease,general
+what determines the price of a stock,general
+how does buying shares work,general
+what are the risks of owning individual stocks,general
+what does market capitalization mean,general
+what is the difference between large cap and small cap stocks,general
+what does a company's share price represent,general
+how does compound interest grow investments,general
+why is compound interest important for long term investing,general
+how does investment time affect compound growth,general
+what is the difference between simple and compound interest,general
+why does starting to invest earlier matter,general
+what is fundamental analysis used for,general
+what information is considered in fundamental analysis,general
+how do investors evaluate a company's fundamentals,general
+what is the purpose of financial statement analysis,general
+how can company earnings affect its stock price,general
+what is technical analysis used for,general
+how do technical indicators help investors,general
+what information do moving averages provide,general
+what does stock momentum mean,general
+how are price trends identified,general
+what is a support level in technical analysis,general
+what is a resistance level in technical analysis,general
+what does trading volume tell investors,general
+what does the price to earnings ratio mean,general
+how is the pe ratio used in stock analysis,general
+what does return on equity measure,general
+what is earnings per share,general
+what does a company's debt ratio indicate,general
+why are financial ratios useful,general
+how does stock valuation work,general
+what does it mean when a stock is overvalued,general
+what does it mean when a stock is undervalued,general
+how do investors estimate the value of a company,general
+what is the difference between price and intrinsic value,general
+what factors can influence stock valuation,general
+what is investment risk management,general
+how can investors manage portfolio risk,general
+why is position sizing important,general
+how can investors limit potential losses,general
+what is the relationship between risk and return,general
+why should investors consider their time horizon,general
+what is a maximum drawdown,general
+what does drawdown tell an investor,general
+what is the sharpe ratio,general
+what does the sortino ratio measure,general
+what does annualised volatility mean,general
+what does a stock market index represent,general
+why is the s and p 500 used as a benchmark,general
+what is a market benchmark,general
+how can an index measure market performance,general
+why do investors compare strategies with buy and hold,general
+what is market sentiment,general
+how can investor sentiment affect stock prices,general
+what causes market sentiment to change,general
+what is a bull market,general
+what is a bear market,general
+how does investor confidence affect markets,general
+how does inflation influence stock prices,general
+why do interest rates affect the stock market,general
+how can economic growth affect companies,general
+what does unemployment indicate about the economy,general
+how can economic indicators affect investing,general
+why do central bank decisions influence markets,general
+what happens to stocks when interest rates rise,general
+how can a recession affect stock prices,general
+what are dividends and how do they work,general
+why do companies pay dividends,general
+what is dividend yield,general
+what happens to dividends when a company performs poorly,general
+what is dividend reinvestment,general
+what is a long term investment strategy,general
+why do investors hold stocks for many years,general
+what are the benefits of long term investing,general
+how does a long investment horizon affect risk,general
+why can frequent trading be risky,general
+what is portfolio management,general
+how should investments be allocated across a portfolio,general
+what does portfolio rebalancing mean,general
+why do investors rebalance portfolios,general
+what is asset allocation,general
+what does predicted return mean,general
+what does a five day predicted return represent,general
+how should i interpret a market rank,general
+what does a buy signal from a machine learning model mean,general
+what does a sell signal from a prediction model mean,general
+how are machine learning stock predictions generated,general
+can a machine learning model guarantee stock returns,general
+why can stock prediction models make mistakes,general
+what are the limitations of historical stock data,general
+why might a model perform differently in future markets,general
+what does backtesting mean,general
+why is backtesting used for trading strategies,general
+what is look ahead bias in backtesting,general
+what does overfitting mean in a stock prediction model,general
+why is out of sample testing important,general
+what is a trading strategy win rate,general
+what does cagr measure,general
+how should a sharpe ratio be interpreted,general
+what does ranking spread mean,general
+why compare top ranked and bottom ranked stocks,general
